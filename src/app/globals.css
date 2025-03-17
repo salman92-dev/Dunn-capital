@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Gsans-Medium;
+  src: url(/fonts/GeneralSans-Medium.otf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: Gsans-Regular;
+  src: url(/fonts/GeneralSans-Regular.otf);
+  font-weight: 400;
+}
 @import "tailwindcss";
 
 :root {
@@ -14,7 +30,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #ffffff;
     --foreground: #ededed;
   }
 }
@@ -22,5 +38,78 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* homepage */
+.header-bg {
+  background: url(/images/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.inter {
+  font-family: Inter Tight;
+}
+.sansMedium {
+  font-family: Gsans-Medium;
+}
+.sansRegular {
+  
+  font-family:Gsans-Regular;
+}
+.flowing-stroke {
+  animation: flowStroke 30s linear infinite;
+}
+.swiper-pagination-bullet {
+  color: #fefefe !important;
+  background: #ffffff !important;
+  width: 24px !important;
+  border-radius: 0 !important;
+  height: 2px !important;
+  display: inline-block;
+}
+.swiper-button-prev {
+  display: none !important;
+}
+.swiper-pagination {
+  text-align: left !important;
+  bottom: 0 !important;
+}
+.swiper-slide {
+  padding-bottom: 50px;
+  padding-right: 100px;
+}
+.animated-border {
+  stroke-dasharray: 150; /* Total length of stroke */
+  stroke-dashoffset: 150; /* Start hidden */
+  
+}
+.animated-group:hover  .animated-border{
+  animation: drawBorder 1.5s linear forwards;
+}
+@keyframes drawBorder {
+  from {
+      stroke-dashoffset: 150; /* Hidden */
+  }
+  to {
+      stroke-dashoffset: 0; /* Fully drawn */
+  }
+}
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+}
+@media(max-width:768px) {
+  .header-bg {
+    background-position: 55% 50%;
+  }
+  .swiper-slide {
+    padding-bottom: 50px;
+    padding-right: 0px;
+  }
+  .swiper-pagination {
+    bottom:12px !important;
+  }
+
 }
