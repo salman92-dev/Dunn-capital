@@ -89,7 +89,7 @@ export default function Home() {
                 className="flex items-center justify-center border bg-white p-4"
               >
                 <Image
-                  src="/images/logoipsum.svg" // Replace with actual logos
+                  src="/images/logoipsum.svg"
                   alt="Company Logo"
                   width={126}
                   height={30}
@@ -100,7 +100,7 @@ export default function Home() {
                 className="flex items-center justify-center border bg-white p-4"
               >
                 <Image
-                  src="/images/logoipsum.svg" // Replace with actual logos
+                  src="/images/logoipsum.svg"
                   alt="Company Logo"
                   width={126}
                   height={30}
@@ -111,7 +111,7 @@ export default function Home() {
                 className="flex items-center justify-center border bg-white p-4"
               >
                 <Image
-                  src="/images/logoipsum.svg" // Replace with actual logos
+                  src="/images/logoipsum.svg"
                   alt="Company Logo"
                   width={126}
                   height={30}
@@ -122,7 +122,7 @@ export default function Home() {
                 className="flex items-center justify-center border bg-white p-4"
               >
                 <Image
-                  src="/images/logoipsum.svg" // Replace with actual logos
+                  src="/images/logoipsum.svg"
                   alt="Company Logo"
                   width={126}
                   height={30}
@@ -200,7 +200,7 @@ export default function Home() {
       </div>
     </section>
 
-    <section className="w-full xl:container mx-auto py-24 max-md:py-8 max-xl:px-4">
+    <section className="w-full xl:container mx-auto py-24 max-md:py-8 max-xl:px-4" id="about">
       <div className="flex max-md:flex-col justify-between">
         <div className="w-[20%] max-md:w-full max-md:gap-y-4">
         <span className="text-[#8D8D8D] text-sm sansRegular">(About)</span>
@@ -695,7 +695,7 @@ export default function Home() {
       </div>
     </section>
 
-    <section className="w-full xl:container mx-auto">
+    <section className="w-full xl:container mx-auto" id="team">
       <div className="flex max-md:flex-col sticky top-0">
         <div className="w-[50%] max-md:w-full p-6 pl-4 flex flex-col justify-between">
           <div className="flex items-center justify-between max-md:mb-10">

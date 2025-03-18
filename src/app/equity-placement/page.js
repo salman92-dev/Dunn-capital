@@ -1,8 +1,9 @@
 import Navbar from "../component/Navbar";
 import Footer from "../component/Footer";
 import Link from "next/link";   
+import Image from "next/image";
 
-const ReverseTakeover = ()=> {
+const EquityPlacement = ()=> {
     return (
         <div>
 
@@ -19,10 +20,10 @@ const ReverseTakeover = ()=> {
                     </p>
                 </div>
                 <div className="flex flex-wrap items-start justify-between my-44 max-lg:my-16 gap-y-10">
-                    <p className="text-[#8D8D8D] text-sm sansRegular">(Reverse Takeover)</p>
+                    <p className="text-[#8D8D8D] text-sm sansRegular">(Equity Placement)</p>
                     <h4 className="text-2xl md:text-3xl sansMedium text-[#111] leading-tight -mt-2 xl:w-[65%] lg:w-[60%] md:w-[80%]">
-                    A Reverse Takeover (RTO) enables private companies to access public markets 
-                    <span className="text-[#11111180]"> by merging with an already listed company, bypassing the traditional IPO process. </span>
+                    We specialize in equity placements that offer more than funding, 
+                    <span className="text-[#11111180]"> connecting businesses with strategic investors who provide capital, expertise, and intellectual property.</span>
                     </h4>
                     <Link className="border-b-[1.3px] border-[#111] text-[#111] flex items-center gap-2 text-sm sansMedium uppercase" href="#contact">
                     Contact Us
@@ -34,22 +35,27 @@ const ReverseTakeover = ()=> {
             </section>
             
             <section className="w-full xl:container mx-auto flex max-lg:flex-col justify-between max-xl:px-4">
-                <div className="">
-                    <p className="sansRegular text-sm text-[#8D8D8D]">(How It Works)</p>
-                </div>
-                <div className="w-[73%] max-lg:w-full">
-                    <div className="relative group flex max-md:flex-col items-start justify-between gap-2 gap-y-6 px-4 py-12 border-b border-[#111]/16 take-bg">
-                        <p className="text-[#8D8D8D] mr-4">(01)</p>
-                        <h4 className="relative z-10 text-2xl md:text-3xl sansMedium text-[#111] lg:w-[45%]">
-                        Identifying the Right Public Entity
-                        </h4>
-                        <p className="text-[#000] sansRegular text-base lg:w-[50%]">
-                        The first step in an RTO is selecting a suitable public shell company that aligns with 
-                        the private company’s industry, growth potential, and market objectives. 
-                        This ensures a smoother transition and minimizes regulatory challenges.
-                        </p>
+                <div className="w-[100%]">
 
-                        <div className="absolute z-0 bottom-[0px] left-6 w-[45%]  hidden group-hover:block">
+                    <div className="relative group flex flex-wrap items-start gap-y-6 px-4 py-12 border-b border-[#111]/16 take-bg overflow-hidden">
+                        <p className="text-[#8D8D8D] mr-4 w-[10%] max-lg:w-full">(Phase I)</p>
+                        <h4 className="relative text-2xl md:text-3xl sansMedium text-[#111] w-[25%] max-md:w-full">
+                        Preparation
+                        </h4>
+                        <div className="flex flex-col gap-y-6 w-[55%] max-md:w-full ml-auto">
+                            <p className="text-[#000] sansRegular text-base">
+                            We begin by conducting a comprehensive company valuation and developing a financial 
+                            model that highlights key performance indicators and future growth potential. 
+                            This ensures that businesses are positioned attractively for investors. 
+                            </p>
+                            <p className="text-[#000] sansRegular text-base">
+                            To effectively engage potential investors, we prepare blind profiles and confidential memorandums 
+                            that outline the company’s strengths, opportunities, and strategic vision while maintaining 
+                            confidentiality until serious interest is established.
+                            </p>
+                        </div>
+
+                        <div className="absolute z-0 bottom-[-50px] left-6 w-[45%]  hidden group-hover:block">
                             <svg  viewBox="0 0 434 161" fill="none" xmlns="http://www.w3.org/2000/svg" className="max-md:hidden">
                             <path d="M391.727 404.065C405.799 386.06 416.418 363.855 423.282 338.073C429.913 313.16 432.778 285.994 431.806 257.297C430.744 228.083 425.964 199.243 417.633 171.793C408.981 142.931 396.657 115.88 381.108 91.6175C365.609 67.4522 347.802 47.5246 328.213 32.4228C309.283 17.8231 289.481 8.29413 269.356 4.1053C249.231 -0.0835294 229.794 1.27603 211.592 8.14717C192.623 15.3477 175.528 28.3945 161.987 46.0059C147.916 64.0105 137.307 86.2529 130.443 111.974C123.812 136.874 120.937 164.052 121.919 192.811C122.976 222.025 127.756 250.866 136.092 278.314C144.739 307.173 157.059 334.221 172.607 358.478C188.086 382.655 205.903 402.534 225.542 417.648C244.473 432.248 264.274 441.777 284.399 445.966C304.525 450.154 323.951 448.795 342.103 441.924C361.07 434.719 378.164 421.672 391.707 404.065H391.727ZM392.304 405.008C334.439 479.072 235.817 458.593 172.05 359.139C108.283 259.685 103.515 119.078 161.39 45.0627C219.266 -28.9522 317.898 -8.47343 381.665 90.9194C445.432 190.312 450.21 330.981 392.325 405.008H392.304Z" stroke="#CACACA" strokeOpacity="0.48"/>
                             <path d="M372.919 433.669C389.117 417.538 402.125 396.802 411.55 372.025C420.661 348.104 426.077 321.44 427.656 292.768C429.183 263.564 426.825 234.253 420.671 205.954C414.264 176.035 403.928 147.555 390.058 121.601C376.816 96.4545 360.078 74.2688 340.585 56.0253C322.282 39.123 302.633 27.1322 282.153 20.4202C261.674 13.7083 241.437 12.606 221.96 17.1378C201.796 21.8305 182.944 32.626 167.162 48.5172C150.964 64.6479 137.956 85.3838 128.531 110.162C119.42 134.094 114.004 160.758 112.425 189.419C110.898 218.627 113.257 247.941 119.41 276.245C125.809 306.171 136.145 334.656 150.023 360.61C163.265 385.756 180.003 407.942 199.496 426.186C217.799 443.076 237.448 455.054 257.938 461.766C278.428 468.478 298.664 469.58 318.142 465.049C338.306 460.36 357.159 449.564 372.94 433.669H372.919ZM373.476 434.686C306.844 501.021 206.531 468.135 149.415 361.197C92.2993 254.26 100.013 113.787 166.625 47.5006C233.237 -18.7858 333.58 14.0512 390.696 120.989C447.812 227.926 440.098 368.399 373.486 434.698L373.476 434.686Z" stroke="#CACACA" strokeOpacity="0.48"/>
@@ -63,21 +69,21 @@ const ReverseTakeover = ()=> {
                         </div>
                     </div>
 
-                    <div className="relative group flex max-md:flex-col items-start justify-between gap-2 gap-y-6 px-4 py-12 border-b border-[#111]/16 take-bg">
-                        <p className="text-[#8D8D8D] mr-4">(02)</p>
-                        <h4 className="relative z-10 text-2xl md:text-3xl sansMedium text-[#111] lg:w-[45%]">
-                        Due Diligence & Compliance
+                    <div className="relative group flex flex-wrap items-start gap-y-6 px-4 py-12 border-b border-[#111]/16 take-bg overflow-hidden">
+                        <p className="text-[#8D8D8D] mr-4 w-[10%] max-lg:w-full">(Phase II)</p>
+                        <h4 className="relative text-2xl md:text-3xl sansMedium text-[#111] w-[25%] max-md:w-full">
+                        Marketing
                         </h4>
-                        <div className="lg:w-[50%] flex flex-col gap-y-6">
+                        <div className="w-[55%] max-md:w-full flex flex-col gap-y-6 ml-auto">
                             <p className="text-[#000] sansRegular text-base">
-                            Before finalizing the transaction, a comprehensive due diligence process is conducted to assess the financial, legal, and operational health of the public entity. This step is crucial to mitigating risks and ensuring transparency for investors.
+                            Our targeted marketing strategy reaches out to private equity groups, strategic investors, and institutional partners to identify the best equity placement opportunities. We initiate outreach, secure confidentiality agreements, and ensure alignment between investors and company objectives.
                             </p>
                             <p className="text-[#000] sansRegular text-base]">
-                            We work closely with legal and financial experts to navigate regulatory compliance, shareholder agreements, and governance structures, ensuring a seamless transition with minimal obstacles.
+                            Through in-depth industry research and investor profiling, we evaluate potential backers based on financial strength, market influence, and long-term compatibility—maximizing the chances of a successful equity partnership.
                             </p>
                         </div>
 
-                        <div className="absolute z-0 bottom-[0px] left-6 w-[45%] hidden group-hover:block">
+                        <div className="absolute z-0 bottom-[-50px] left-6 w-[45%] hidden group-hover:block">
                             <svg  viewBox="0 0 434 161" fill="none" xmlns="http://www.w3.org/2000/svg" className="max-md:hidden">
                             <path d="M391.727 404.065C405.799 386.06 416.418 363.855 423.282 338.073C429.913 313.16 432.778 285.994 431.806 257.297C430.744 228.083 425.964 199.243 417.633 171.793C408.981 142.931 396.657 115.88 381.108 91.6175C365.609 67.4522 347.802 47.5246 328.213 32.4228C309.283 17.8231 289.481 8.29413 269.356 4.1053C249.231 -0.0835294 229.794 1.27603 211.592 8.14717C192.623 15.3477 175.528 28.3945 161.987 46.0059C147.916 64.0105 137.307 86.2529 130.443 111.974C123.812 136.874 120.937 164.052 121.919 192.811C122.976 222.025 127.756 250.866 136.092 278.314C144.739 307.173 157.059 334.221 172.607 358.478C188.086 382.655 205.903 402.534 225.542 417.648C244.473 432.248 264.274 441.777 284.399 445.966C304.525 450.154 323.951 448.795 342.103 441.924C361.07 434.719 378.164 421.672 391.707 404.065H391.727ZM392.304 405.008C334.439 479.072 235.817 458.593 172.05 359.139C108.283 259.685 103.515 119.078 161.39 45.0627C219.266 -28.9522 317.898 -8.47343 381.665 90.9194C445.432 190.312 450.21 330.981 392.325 405.008H392.304Z" stroke="#CACACA" strokeOpacity="0.48"/>
                             <path d="M372.919 433.669C389.117 417.538 402.125 396.802 411.55 372.025C420.661 348.104 426.077 321.44 427.656 292.768C429.183 263.564 426.825 234.253 420.671 205.954C414.264 176.035 403.928 147.555 390.058 121.601C376.816 96.4545 360.078 74.2688 340.585 56.0253C322.282 39.123 302.633 27.1322 282.153 20.4202C261.674 13.7083 241.437 12.606 221.96 17.1378C201.796 21.8305 182.944 32.626 167.162 48.5172C150.964 64.6479 137.956 85.3838 128.531 110.162C119.42 134.094 114.004 160.758 112.425 189.419C110.898 218.627 113.257 247.941 119.41 276.245C125.809 306.171 136.145 334.656 150.023 360.61C163.265 385.756 180.003 407.942 199.496 426.186C217.799 443.076 237.448 455.054 257.938 461.766C278.428 468.478 298.664 469.58 318.142 465.049C338.306 460.36 357.159 449.564 372.94 433.669H372.919ZM373.476 434.686C306.844 501.021 206.531 468.135 149.415 361.197C92.2993 254.26 100.013 113.787 166.625 47.5006C233.237 -18.7858 333.58 14.0512 390.696 120.989C447.812 227.926 440.098 368.399 373.486 434.698L373.476 434.686Z" stroke="#CACACA" strokeOpacity="0.48"/>
@@ -91,18 +97,21 @@ const ReverseTakeover = ()=> {
                         </div>
                     </div>
 
-                    <div className="relative group flex max-md:flex-col items-start justify-between gap-2 gap-y-6 px-4 py-12 border-b border-[#111]/16 take-bg">
-                        <p className="text-[#8D8D8D] mr-4">(03)</p>
-                        <h4 className="relative z-10 text-2xl md:text-3xl sansMedium text-[#111] lg:w-[45%]">
-                        Structuring the Merger & Acquisition
+                    <div className="relative group flex flex-wrap items-start gap-y-6 px-4 py-12 border-b border-[#111]/16 take-bg overflow-hidden">
+                        <p className="text-[#8D8D8D] mr-4 w-[10%] max-lg:w-full">(Phase III)</p>
+                        <h4 className="relative text-2xl md:text-3xl sansMedium text-[#111] w-[25%] max-md:w-full">
+                        Negotiation
                         </h4>
-                        <div className="lg:w-[50%] flex flex-col gap-y-6">
+                        <div className="w-[55%] max-md:w-full flex flex-col gap-y-6 ml-auto">
                             <p className="text-[#000] sansRegular text-base">
-                            Once the due diligence phase is complete, the next step involves structuring the merger, including negotiating terms, defining ownership structures, and finalizing financial agreements.
+                            Once interested investors are identified, we assist in structuring and negotiating optimal equity offers, balancing price, terms, and strategic value to ensure the best outcome for the company. Our team facilitates smooth discussions to minimize friction and accelerate deal closure.
                             </p>
-                        </div>
+                            <p className="text-[#000] sansRegular text-base">
+                            We also help businesses assess and compare multiple investment proposals, ensuring that the selected equity partner aligns with their growth vision, operational needs, and long-term success strategy.
+                            </p>
+                            </div>
 
-                        <div className="absolute z-0 bottom-[0px] left-6 w-[45%] hidden group-hover:block">
+                        <div className="absolute z-0 bottom-[-50px] left-6 w-[45%] hidden group-hover:block">
                             <svg  viewBox="0 0 434 161" fill="none" xmlns="http://www.w3.org/2000/svg" className="max-md:hidden">
                             <path d="M391.727 404.065C405.799 386.06 416.418 363.855 423.282 338.073C429.913 313.16 432.778 285.994 431.806 257.297C430.744 228.083 425.964 199.243 417.633 171.793C408.981 142.931 396.657 115.88 381.108 91.6175C365.609 67.4522 347.802 47.5246 328.213 32.4228C309.283 17.8231 289.481 8.29413 269.356 4.1053C249.231 -0.0835294 229.794 1.27603 211.592 8.14717C192.623 15.3477 175.528 28.3945 161.987 46.0059C147.916 64.0105 137.307 86.2529 130.443 111.974C123.812 136.874 120.937 164.052 121.919 192.811C122.976 222.025 127.756 250.866 136.092 278.314C144.739 307.173 157.059 334.221 172.607 358.478C188.086 382.655 205.903 402.534 225.542 417.648C244.473 432.248 264.274 441.777 284.399 445.966C304.525 450.154 323.951 448.795 342.103 441.924C361.07 434.719 378.164 421.672 391.707 404.065H391.727ZM392.304 405.008C334.439 479.072 235.817 458.593 172.05 359.139C108.283 259.685 103.515 119.078 161.39 45.0627C219.266 -28.9522 317.898 -8.47343 381.665 90.9194C445.432 190.312 450.21 330.981 392.325 405.008H392.304Z" stroke="#CACACA" strokeOpacity="0.48"/>
                             <path d="M372.919 433.669C389.117 417.538 402.125 396.802 411.55 372.025C420.661 348.104 426.077 321.44 427.656 292.768C429.183 263.564 426.825 234.253 420.671 205.954C414.264 176.035 403.928 147.555 390.058 121.601C376.816 96.4545 360.078 74.2688 340.585 56.0253C322.282 39.123 302.633 27.1322 282.153 20.4202C261.674 13.7083 241.437 12.606 221.96 17.1378C201.796 21.8305 182.944 32.626 167.162 48.5172C150.964 64.6479 137.956 85.3838 128.531 110.162C119.42 134.094 114.004 160.758 112.425 189.419C110.898 218.627 113.257 247.941 119.41 276.245C125.809 306.171 136.145 334.656 150.023 360.61C163.265 385.756 180.003 407.942 199.496 426.186C217.799 443.076 237.448 455.054 257.938 461.766C278.428 468.478 298.664 469.58 318.142 465.049C338.306 460.36 357.159 449.564 372.94 433.669H372.919ZM373.476 434.686C306.844 501.021 206.531 468.135 149.415 361.197C92.2993 254.26 100.013 113.787 166.625 47.5006C233.237 -18.7858 333.58 14.0512 390.696 120.989C447.812 227.926 440.098 368.399 373.486 434.698L373.476 434.686Z" stroke="#CACACA" strokeOpacity="0.48"/>
@@ -116,18 +125,23 @@ const ReverseTakeover = ()=> {
                         </div>
                     </div>
 
-                    <div className="relative group flex max-md:flex-col items-start justify-between gap-2 gap-y-6 px-4 py-12 take-bg">
-                        <p className="text-[#8D8D8D] mr-4">(04)</p>
-                        <h4 className="relative z-10 text-2xl md:text-3xl sansMedium text-[#111] lg:w-[45%]">
-                        Public Market Integration & growth
+                    <div className="relative group flex flex-wrap items-start gap-y-6 px-4 py-12 take-bg overflow-hidden">
+                        <p className="text-[#8D8D8D] mr-4 w-[10%] max-lg:w-full">(Phase IV)</p>
+                        <h4 className="relative text-2xl md:text-3xl sansMedium text-[#111] w-[25%] max-md:w-full">
+                        Final Documentation and Closing
                         </h4>
-                        <div className="lg:w-[50%] flex flex-col gap-y-6">
+                        <div className="w-[55%] max-md:w-full flex flex-col gap-y-6 ml-auto">
                             <p className="text-[#000] sansRegular text-base">
-                            After a successful merger, the newly public company must establish a strong market presence by engaging investors, communicating financial performance, and securing capital for future expansion.
+                            {`In the final stage, we guide companies through the due diligence process, ensuring compliance, risk assessment, and final agreement structuring to protect both parties' interests. `}
+                            </p>
+                            <p className="text-[#000] sansRegular text-base">
+                            Our team works closely with legal advisors and financial experts to finalize all documentation, 
+                            complete regulatory filings, and execute a seamless closing—ensuring a smooth transition for 
+                            both the company and its new investors.
                             </p>
                         </div>
 
-                        <div className="absolute z-0 bottom-[0px] left-6 w-[45%] hidden group-hover:block">
+                        <div className="absolute z-0 bottom-[-50px] left-6 w-[45%] hidden group-hover:block">
                             <svg  viewBox="0 0 434 161" fill="none" xmlns="http://www.w3.org/2000/svg" className="max-md:hidden">
                             <path d="M391.727 404.065C405.799 386.06 416.418 363.855 423.282 338.073C429.913 313.16 432.778 285.994 431.806 257.297C430.744 228.083 425.964 199.243 417.633 171.793C408.981 142.931 396.657 115.88 381.108 91.6175C365.609 67.4522 347.802 47.5246 328.213 32.4228C309.283 17.8231 289.481 8.29413 269.356 4.1053C249.231 -0.0835294 229.794 1.27603 211.592 8.14717C192.623 15.3477 175.528 28.3945 161.987 46.0059C147.916 64.0105 137.307 86.2529 130.443 111.974C123.812 136.874 120.937 164.052 121.919 192.811C122.976 222.025 127.756 250.866 136.092 278.314C144.739 307.173 157.059 334.221 172.607 358.478C188.086 382.655 205.903 402.534 225.542 417.648C244.473 432.248 264.274 441.777 284.399 445.966C304.525 450.154 323.951 448.795 342.103 441.924C361.07 434.719 378.164 421.672 391.707 404.065H391.727ZM392.304 405.008C334.439 479.072 235.817 458.593 172.05 359.139C108.283 259.685 103.515 119.078 161.39 45.0627C219.266 -28.9522 317.898 -8.47343 381.665 90.9194C445.432 190.312 450.21 330.981 392.325 405.008H392.304Z" stroke="#CACACA" strokeOpacity="0.48"/>
                             <path d="M372.919 433.669C389.117 417.538 402.125 396.802 411.55 372.025C420.661 348.104 426.077 321.44 427.656 292.768C429.183 263.564 426.825 234.253 420.671 205.954C414.264 176.035 403.928 147.555 390.058 121.601C376.816 96.4545 360.078 74.2688 340.585 56.0253C322.282 39.123 302.633 27.1322 282.153 20.4202C261.674 13.7083 241.437 12.606 221.96 17.1378C201.796 21.8305 182.944 32.626 167.162 48.5172C150.964 64.6479 137.956 85.3838 128.531 110.162C119.42 134.094 114.004 160.758 112.425 189.419C110.898 218.627 113.257 247.941 119.41 276.245C125.809 306.171 136.145 334.656 150.023 360.61C163.265 385.756 180.003 407.942 199.496 426.186C217.799 443.076 237.448 455.054 257.938 461.766C278.428 468.478 298.664 469.58 318.142 465.049C338.306 460.36 357.159 449.564 372.94 433.669H372.919ZM373.476 434.686C306.844 501.021 206.531 468.135 149.415 361.197C92.2993 254.26 100.013 113.787 166.625 47.5006C233.237 -18.7858 333.58 14.0512 390.696 120.989C447.812 227.926 440.098 368.399 373.486 434.698L373.476 434.686Z" stroke="#CACACA" strokeOpacity="0.48"/>
@@ -143,9 +157,18 @@ const ReverseTakeover = ()=> {
                 </div>
             </section>
 
+            <section className="w-full xl:container mx-auto max-xl:px-4 py-24 max-md:py-16 flex flex-wrap items-center justify-between gap-y-4">
+                <div className="w-[33%] max-md:w-full">
+                    <Image src="/images/stocks-laptop.png" alt="laptop" width={453} height={400} className="w-full"/>
+                </div>
+                <div className="w-[66%] max-md:w-full">
+                <Image src="/images/meeting.png" alt="meet" width={899} height={400} className="w-full" />
+                </div>
+            </section>
+
             <Footer />
         </div>
     )
 }
 
-export default ReverseTakeover;
+export default EquityPlacement;

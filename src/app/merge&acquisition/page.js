@@ -2,7 +2,7 @@ import Navbar from "../component/Navbar";
 import Footer from "../component/Footer";
 import Link from "next/link";   
 
-const ReverseTakeover = ()=> {
+const MergeAcquisition = ()=> {
     return (
         <div>
 
@@ -19,10 +19,10 @@ const ReverseTakeover = ()=> {
                     </p>
                 </div>
                 <div className="flex flex-wrap items-start justify-between my-44 max-lg:my-16 gap-y-10">
-                    <p className="text-[#8D8D8D] text-sm sansRegular">(Reverse Takeover)</p>
+                    <p className="text-[#8D8D8D] text-sm sansRegular">(Mergers and Acquisitions)</p>
                     <h4 className="text-2xl md:text-3xl sansMedium text-[#111] leading-tight -mt-2 xl:w-[65%] lg:w-[60%] md:w-[80%]">
-                    A Reverse Takeover (RTO) enables private companies to access public markets 
-                    <span className="text-[#11111180]"> by merging with an already listed company, bypassing the traditional IPO process. </span>
+                    We specialize in Mergers & Acquisitions (M&A)  
+                    <span className="text-[#11111180]"> as a powerful tool for businesses to expand, scale, and strengthen market position.</span>
                     </h4>
                     <Link className="border-b-[1.3px] border-[#111] text-[#111] flex items-center gap-2 text-sm sansMedium uppercase" href="#contact">
                     Contact Us
@@ -38,16 +38,21 @@ const ReverseTakeover = ()=> {
                     <p className="sansRegular text-sm text-[#8D8D8D]">(How It Works)</p>
                 </div>
                 <div className="w-[73%] max-lg:w-full">
+
                     <div className="relative group flex max-md:flex-col items-start justify-between gap-2 gap-y-6 px-4 py-12 border-b border-[#111]/16 take-bg">
                         <p className="text-[#8D8D8D] mr-4">(01)</p>
                         <h4 className="relative z-10 text-2xl md:text-3xl sansMedium text-[#111] lg:w-[45%]">
-                        Identifying the Right Public Entity
+                        Horizontal Merger
                         </h4>
-                        <p className="text-[#000] sansRegular text-base lg:w-[50%]">
-                        The first step in an RTO is selecting a suitable public shell company that aligns with 
-                        the private company’s industry, growth potential, and market objectives. 
-                        This ensures a smoother transition and minimizes regulatory challenges.
-                        </p>
+                        <div className="flex flex-col gap-y-6 lg:w-[50%]">
+                            <p className="text-[#000] sansRegular text-base">
+                            Companies in the same industry merge to increase market share, reduce competition, 
+                            and improve efficiency.
+                            </p>
+                            <p className="text-[#000] sansRegular text-base">
+                            Example: Two telecom firms merge to dominate the mobile market.
+                            </p>
+                        </div>
 
                         <div className="absolute z-0 bottom-[0px] left-6 w-[45%]  hidden group-hover:block">
                             <svg  viewBox="0 0 434 161" fill="none" xmlns="http://www.w3.org/2000/svg" className="max-md:hidden">
@@ -66,14 +71,14 @@ const ReverseTakeover = ()=> {
                     <div className="relative group flex max-md:flex-col items-start justify-between gap-2 gap-y-6 px-4 py-12 border-b border-[#111]/16 take-bg">
                         <p className="text-[#8D8D8D] mr-4">(02)</p>
                         <h4 className="relative z-10 text-2xl md:text-3xl sansMedium text-[#111] lg:w-[45%]">
-                        Due Diligence & Compliance
+                        Vertical Merger
                         </h4>
                         <div className="lg:w-[50%] flex flex-col gap-y-6">
                             <p className="text-[#000] sansRegular text-base">
-                            Before finalizing the transaction, a comprehensive due diligence process is conducted to assess the financial, legal, and operational health of the public entity. This step is crucial to mitigating risks and ensuring transparency for investors.
+                            Companies at different supply chain stages merge to cut costs, enhance control, and improve product quality.
                             </p>
                             <p className="text-[#000] sansRegular text-base]">
-                            We work closely with legal and financial experts to navigate regulatory compliance, shareholder agreements, and governance structures, ensuring a seamless transition with minimal obstacles.
+                            Example: A car manufacturer merges with a tire supplier.
                             </p>
                         </div>
 
@@ -94,11 +99,14 @@ const ReverseTakeover = ()=> {
                     <div className="relative group flex max-md:flex-col items-start justify-between gap-2 gap-y-6 px-4 py-12 border-b border-[#111]/16 take-bg">
                         <p className="text-[#8D8D8D] mr-4">(03)</p>
                         <h4 className="relative z-10 text-2xl md:text-3xl sansMedium text-[#111] lg:w-[45%]">
-                        Structuring the Merger & Acquisition
+                        Conglomerate Merger
                         </h4>
                         <div className="lg:w-[50%] flex flex-col gap-y-6">
                             <p className="text-[#000] sansRegular text-base">
-                            Once the due diligence phase is complete, the next step involves structuring the merger, including negotiating terms, defining ownership structures, and finalizing financial agreements.
+                            Unrelated companies merge to diversify, reduce risk, and expand into new markets.
+                            </p>
+                            <p className="text-[#000] sansRegular text-base">
+                            Example: A food company merges with a tech firm.
                             </p>
                         </div>
 
@@ -119,11 +127,14 @@ const ReverseTakeover = ()=> {
                     <div className="relative group flex max-md:flex-col items-start justify-between gap-2 gap-y-6 px-4 py-12 take-bg">
                         <p className="text-[#8D8D8D] mr-4">(04)</p>
                         <h4 className="relative z-10 text-2xl md:text-3xl sansMedium text-[#111] lg:w-[45%]">
-                        Public Market Integration & growth
+                        Market Extension Merger
                         </h4>
                         <div className="lg:w-[50%] flex flex-col gap-y-6">
                             <p className="text-[#000] sansRegular text-base">
-                            After a successful merger, the newly public company must establish a strong market presence by engaging investors, communicating financial performance, and securing capital for future expansion.
+                            Companies selling similar products in different regions merge to expand customer reach.
+                            </p>
+                            <p className="text-[#000] sansRegular text-base">
+                            Example: A U.S. software company merges with a European provider.
                             </p>
                         </div>
 
@@ -140,12 +151,91 @@ const ReverseTakeover = ()=> {
                             </svg>
                         </div>
                     </div>
+
+                    <div className="relative group flex max-md:flex-col items-start justify-between gap-2 gap-y-6 px-4 py-12 take-bg">
+                        <p className="text-[#8D8D8D] mr-4">(05)</p>
+                        <h4 className="relative z-10 text-2xl md:text-3xl sansMedium text-[#111] lg:w-[45%]">
+                        Product Extension Merger
+                        </h4>
+                        <div className="lg:w-[50%] flex flex-col gap-y-6">
+                            <p className="text-[#000] sansRegular text-base">
+                            Companies in the same industry merge to expand product lines and boost cross-selling.
+                            </p>
+                            <p className="text-[#000] sansRegular text-base">
+                            Example: A beverage brand merges with a snack company.
+                            </p>
+                        </div>
+
+                        <div className="absolute z-0 bottom-[0px] left-6 w-[45%] hidden group-hover:block">
+                            <svg  viewBox="0 0 434 161" fill="none" xmlns="http://www.w3.org/2000/svg" className="max-md:hidden">
+                            <path d="M391.727 404.065C405.799 386.06 416.418 363.855 423.282 338.073C429.913 313.16 432.778 285.994 431.806 257.297C430.744 228.083 425.964 199.243 417.633 171.793C408.981 142.931 396.657 115.88 381.108 91.6175C365.609 67.4522 347.802 47.5246 328.213 32.4228C309.283 17.8231 289.481 8.29413 269.356 4.1053C249.231 -0.0835294 229.794 1.27603 211.592 8.14717C192.623 15.3477 175.528 28.3945 161.987 46.0059C147.916 64.0105 137.307 86.2529 130.443 111.974C123.812 136.874 120.937 164.052 121.919 192.811C122.976 222.025 127.756 250.866 136.092 278.314C144.739 307.173 157.059 334.221 172.607 358.478C188.086 382.655 205.903 402.534 225.542 417.648C244.473 432.248 264.274 441.777 284.399 445.966C304.525 450.154 323.951 448.795 342.103 441.924C361.07 434.719 378.164 421.672 391.707 404.065H391.727ZM392.304 405.008C334.439 479.072 235.817 458.593 172.05 359.139C108.283 259.685 103.515 119.078 161.39 45.0627C219.266 -28.9522 317.898 -8.47343 381.665 90.9194C445.432 190.312 450.21 330.981 392.325 405.008H392.304Z" stroke="#CACACA" strokeOpacity="0.48"/>
+                            <path d="M372.919 433.669C389.117 417.538 402.125 396.802 411.55 372.025C420.661 348.104 426.077 321.44 427.656 292.768C429.183 263.564 426.825 234.253 420.671 205.954C414.264 176.035 403.928 147.555 390.058 121.601C376.816 96.4545 360.078 74.2688 340.585 56.0253C322.282 39.123 302.633 27.1322 282.153 20.4202C261.674 13.7083 241.437 12.606 221.96 17.1378C201.796 21.8305 182.944 32.626 167.162 48.5172C150.964 64.6479 137.956 85.3838 128.531 110.162C119.42 134.094 114.004 160.758 112.425 189.419C110.898 218.627 113.257 247.941 119.41 276.245C125.809 306.171 136.145 334.656 150.023 360.61C163.265 385.756 180.003 407.942 199.496 426.186C217.799 443.076 237.448 455.054 257.938 461.766C278.428 468.478 298.664 469.58 318.142 465.049C338.306 460.36 357.159 449.564 372.94 433.669H372.919ZM373.476 434.686C306.844 501.021 206.531 468.135 149.415 361.197C92.2993 254.26 100.013 113.787 166.625 47.5006C233.237 -18.7858 333.58 14.0512 390.696 120.989C447.812 227.926 440.098 368.399 373.486 434.698L373.476 434.686Z" stroke="#CACACA" strokeOpacity="0.48"/>
+                            <path d="M350.778 460.737C369.314 446.372 384.895 427.077 396.333 404.323C407.925 381.676 415.942 355.833 420.143 327.527C424.361 298.694 424.56 269.21 420.731 240.297C416.765 209.632 408.619 179.977 396.627 152.54C385.066 125.703 369.717 101.517 351.274 81.0724C334.603 62.5028 315.141 47.9753 293.945 38.2778C274.172 29.1626 252.978 25.4446 231.879 27.3893C210.673 29.4701 190.211 37.805 172.283 51.6649C153.751 66.0417 138.172 85.3392 126.727 108.092C115.136 130.738 107.129 156.569 102.917 184.875C98.7045 213.709 98.5061 243.192 102.33 272.105C106.306 302.77 114.458 332.425 126.454 359.862C138.014 386.704 153.366 410.891 171.817 431.33C188.486 449.9 207.944 464.431 229.136 474.136C248.909 483.254 270.103 486.968 291.202 485.013C312.41 482.945 332.875 474.609 350.798 460.737H350.778ZM351.264 461.815C276.27 519.381 175.299 473.965 125.756 360.413C76.2118 246.862 96.8331 108.104 171.827 50.5381C246.821 -7.02772 347.771 38.486 397.325 152.001C446.879 265.516 426.238 404.31 351.244 461.815H351.264Z" stroke="#CACACA" strokeOpacity="0.48"/>
+                            <path d="M325.398 484.853C345.746 473.06 363.622 455.845 377.686 434.501C392.034 412.75 402.761 387.839 409.27 361.148C416.222 333.066 419.082 303.736 417.723 274.468C416.366 243.398 410.599 212.843 400.676 184.139C391.032 155.828 377.299 129.82 360.121 107.331C344.355 86.6185 325.481 69.7151 304.504 57.5187C284.734 45.9179 263.146 39.5503 241.182 38.8405C219.088 38.2072 197.184 43.8978 177.253 55.4488C156.921 67.2659 139.063 84.4964 125.016 105.849C110.667 127.6 99.9409 152.511 93.4312 179.203C86.4813 207.285 83.621 236.615 84.9781 265.882C86.3375 296.938 92.1078 327.477 102.036 356.163C111.684 384.483 125.431 410.493 142.631 432.97C158.386 453.678 177.245 470.581 198.208 482.783C217.963 494.375 239.532 500.743 261.479 501.461C283.57 502.096 305.471 496.405 325.398 484.853V484.853ZM325.793 485.98C242.913 533.747 142.408 475.814 101.297 356.616C60.186 237.418 94.0386 102.077 176.949 54.322C259.859 6.56686 360.334 64.5001 401.445 183.698C442.556 302.896 408.663 438.225 325.763 485.98H325.793Z" stroke="#CACACA" strokeOpacity="0.48"/>
+                            <path d="M296.941 505.625C318.935 496.59 338.992 481.746 355.657 462.169C372.378 442.53 385.739 419.099 394.976 393.213C404.689 366.272 410.3 337.43 411.538 308.077C412.904 276.963 409.651 245.806 401.93 216.082C394.425 186.552 382.531 158.925 366.833 134.559C352.252 111.832 334.254 92.6416 313.786 77.9972C294.214 63.8943 272.441 54.8451 249.837 51.419C227.029 47.9916 203.875 50.8729 182.122 59.8456C160.129 68.8918 140.074 83.7392 123.406 103.314C106.689 122.954 93.3314 146.386 84.0969 172.27C74.4115 199.217 68.8283 228.059 67.6161 257.406C66.2444 288.517 69.4879 319.674 77.1928 349.401C84.7015 378.932 96.5988 406.559 112.301 430.924C126.874 453.642 144.857 472.831 165.307 487.486C184.874 501.572 206.635 510.62 229.226 514.064C252.034 517.493 275.189 514.608 296.941 505.625V505.625ZM297.245 506.85C207.147 543.851 108.18 473.548 76.3121 349.793C44.4437 226.039 91.7097 95.6956 181.858 58.682C272.007 21.6685 370.923 91.9844 402.781 215.726C434.639 339.468 387.393 469.787 297.245 506.801V506.85Z" stroke="#CACACA" strokeOpacity="0.48"/>
+                            <path d="M265.59 522.703C289.046 516.56 311.125 504.346 330.309 486.902C349.273 469.652 365.227 448.031 377.251 423.285C389.693 397.865 398.108 369.861 402.064 340.709C410.487 278.759 399.553 215.232 371.39 162.5C358.203 137.893 341.286 116.528 321.532 99.5329C302.397 82.9778 280.71 71.2408 257.755 65.0179C234.408 58.7211 210.208 58.6626 186.841 64.8464C163.383 70.9836 141.304 83.1975 122.122 100.647C103.161 117.893 87.2108 139.51 75.1899 164.251C62.7321 189.668 54.3003 217.672 50.3269 246.828C41.9143 308.778 52.8478 372.299 81.0007 425.037C94.1882 449.639 111.105 471 130.858 487.992C150.008 504.555 171.714 516.292 194.686 522.507C218.016 528.794 242.198 528.857 265.55 522.69L265.59 522.703ZM265.762 523.915C169.074 549.305 72.9324 466.864 51.0659 339.79C29.1994 212.717 89.889 89.0485 186.598 63.6461C283.306 38.2437 379.418 120.673 401.335 247.771C423.252 374.869 362.522 498.488 265.803 523.891L265.762 523.915Z" stroke="#CACACA" strokeOpacity="0.48"/>
+                            <path d="M231.616 535.695C256.366 532.595 280.306 523.258 301.892 508.284C322.942 493.675 341.407 474.193 356.234 450.951C371.336 427.418 382.586 400.613 389.378 371.976C403.652 311.401 397.996 246.493 373.596 190.852C362.037 164.545 346.431 141.152 327.615 121.932C309.114 102.929 287.701 88.5202 264.597 79.5292C240.899 70.3507 215.881 67.2354 191.134 70.3814C166.386 73.5273 142.45 82.8656 120.846 97.8032C99.7964 112.408 81.3309 131.886 66.5032 155.124C51.4137 178.664 40.178 205.473 33.3998 234.112C19.103 294.678 24.7408 359.588 49.1315 415.236C60.6996 441.538 76.3087 464.93 95.122 484.155C113.622 503.154 135.031 517.562 158.13 526.558C181.829 535.782 206.862 538.894 231.616 535.695V535.695ZM231.727 536.92C129.197 549.952 37.0138 455.801 25.7971 326.646C14.5804 197.49 88.5621 82.1992 191.051 69.1061C293.54 56.0129 385.714 150.213 396.94 279.38C408.167 408.548 334.175 523.888 231.686 536.92H231.727Z" stroke="#CACACA" strokeOpacity="0.48"/>
+                            <path d="M195.173 544.33C239.816 544.374 283.097 525.725 317.668 491.55C352.24 457.375 375.971 409.78 384.836 356.842C393.7 303.904 387.15 248.886 366.298 201.127C345.447 153.367 311.577 115.809 270.44 94.8269C223.186 70.6752 169.937 70.224 122.408 93.5725C74.8794 116.921 36.9632 162.157 17.0011 219.328C-2.96102 276.5 -3.33397 340.924 15.9643 398.428C35.2626 455.932 72.6512 501.806 119.905 525.958C143.717 538.146 169.317 544.395 195.173 544.33V544.33ZM195.173 545.555C87.8648 545.555 0.803711 440.222 0.803711 310.392C0.803711 180.563 87.8648 75.23 195.173 75.23C302.48 75.23 389.541 180.563 389.541 310.392C389.541 440.222 302.48 545.555 195.173 545.555Z" stroke="#CACACA" strokeOpacity="0.48"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div className="relative group flex max-md:flex-col items-start justify-between gap-2 gap-y-6 px-4 py-12 take-bg">
+                        <p className="text-[#8D8D8D] mr-4">(06)</p>
+                        <h4 className="relative z-10 text-2xl md:text-3xl sansMedium text-[#111] lg:w-[45%]">
+                        Acquisition
+                        </h4>
+                        <div className="lg:w-[50%] flex flex-col gap-y-6">
+                            <p className="text-[#000] sansRegular text-base">
+                            One company buys another to accelerate growth, gain new technology, or strengthen market position.
+                            </p>
+                            <p className="text-[#000] sansRegular text-base">
+                            Example: A tech giant acquires a startup for its software innovation.
+                            </p>
+                        </div>
+
+                        <div className="absolute z-0 bottom-[0px] left-6 w-[45%] hidden group-hover:block">
+                            <svg  viewBox="0 0 434 161" fill="none" xmlns="http://www.w3.org/2000/svg" className="max-md:hidden">
+                            <path d="M391.727 404.065C405.799 386.06 416.418 363.855 423.282 338.073C429.913 313.16 432.778 285.994 431.806 257.297C430.744 228.083 425.964 199.243 417.633 171.793C408.981 142.931 396.657 115.88 381.108 91.6175C365.609 67.4522 347.802 47.5246 328.213 32.4228C309.283 17.8231 289.481 8.29413 269.356 4.1053C249.231 -0.0835294 229.794 1.27603 211.592 8.14717C192.623 15.3477 175.528 28.3945 161.987 46.0059C147.916 64.0105 137.307 86.2529 130.443 111.974C123.812 136.874 120.937 164.052 121.919 192.811C122.976 222.025 127.756 250.866 136.092 278.314C144.739 307.173 157.059 334.221 172.607 358.478C188.086 382.655 205.903 402.534 225.542 417.648C244.473 432.248 264.274 441.777 284.399 445.966C304.525 450.154 323.951 448.795 342.103 441.924C361.07 434.719 378.164 421.672 391.707 404.065H391.727ZM392.304 405.008C334.439 479.072 235.817 458.593 172.05 359.139C108.283 259.685 103.515 119.078 161.39 45.0627C219.266 -28.9522 317.898 -8.47343 381.665 90.9194C445.432 190.312 450.21 330.981 392.325 405.008H392.304Z" stroke="#CACACA" strokeOpacity="0.48"/>
+                            <path d="M372.919 433.669C389.117 417.538 402.125 396.802 411.55 372.025C420.661 348.104 426.077 321.44 427.656 292.768C429.183 263.564 426.825 234.253 420.671 205.954C414.264 176.035 403.928 147.555 390.058 121.601C376.816 96.4545 360.078 74.2688 340.585 56.0253C322.282 39.123 302.633 27.1322 282.153 20.4202C261.674 13.7083 241.437 12.606 221.96 17.1378C201.796 21.8305 182.944 32.626 167.162 48.5172C150.964 64.6479 137.956 85.3838 128.531 110.162C119.42 134.094 114.004 160.758 112.425 189.419C110.898 218.627 113.257 247.941 119.41 276.245C125.809 306.171 136.145 334.656 150.023 360.61C163.265 385.756 180.003 407.942 199.496 426.186C217.799 443.076 237.448 455.054 257.938 461.766C278.428 468.478 298.664 469.58 318.142 465.049C338.306 460.36 357.159 449.564 372.94 433.669H372.919ZM373.476 434.686C306.844 501.021 206.531 468.135 149.415 361.197C92.2993 254.26 100.013 113.787 166.625 47.5006C233.237 -18.7858 333.58 14.0512 390.696 120.989C447.812 227.926 440.098 368.399 373.486 434.698L373.476 434.686Z" stroke="#CACACA" strokeOpacity="0.48"/>
+                            <path d="M350.778 460.737C369.314 446.372 384.895 427.077 396.333 404.323C407.925 381.676 415.942 355.833 420.143 327.527C424.361 298.694 424.56 269.21 420.731 240.297C416.765 209.632 408.619 179.977 396.627 152.54C385.066 125.703 369.717 101.517 351.274 81.0724C334.603 62.5028 315.141 47.9753 293.945 38.2778C274.172 29.1626 252.978 25.4446 231.879 27.3893C210.673 29.4701 190.211 37.805 172.283 51.6649C153.751 66.0417 138.172 85.3392 126.727 108.092C115.136 130.738 107.129 156.569 102.917 184.875C98.7045 213.709 98.5061 243.192 102.33 272.105C106.306 302.77 114.458 332.425 126.454 359.862C138.014 386.704 153.366 410.891 171.817 431.33C188.486 449.9 207.944 464.431 229.136 474.136C248.909 483.254 270.103 486.968 291.202 485.013C312.41 482.945 332.875 474.609 350.798 460.737H350.778ZM351.264 461.815C276.27 519.381 175.299 473.965 125.756 360.413C76.2118 246.862 96.8331 108.104 171.827 50.5381C246.821 -7.02772 347.771 38.486 397.325 152.001C446.879 265.516 426.238 404.31 351.244 461.815H351.264Z" stroke="#CACACA" strokeOpacity="0.48"/>
+                            <path d="M325.398 484.853C345.746 473.06 363.622 455.845 377.686 434.501C392.034 412.75 402.761 387.839 409.27 361.148C416.222 333.066 419.082 303.736 417.723 274.468C416.366 243.398 410.599 212.843 400.676 184.139C391.032 155.828 377.299 129.82 360.121 107.331C344.355 86.6185 325.481 69.7151 304.504 57.5187C284.734 45.9179 263.146 39.5503 241.182 38.8405C219.088 38.2072 197.184 43.8978 177.253 55.4488C156.921 67.2659 139.063 84.4964 125.016 105.849C110.667 127.6 99.9409 152.511 93.4312 179.203C86.4813 207.285 83.621 236.615 84.9781 265.882C86.3375 296.938 92.1078 327.477 102.036 356.163C111.684 384.483 125.431 410.493 142.631 432.97C158.386 453.678 177.245 470.581 198.208 482.783C217.963 494.375 239.532 500.743 261.479 501.461C283.57 502.096 305.471 496.405 325.398 484.853V484.853ZM325.793 485.98C242.913 533.747 142.408 475.814 101.297 356.616C60.186 237.418 94.0386 102.077 176.949 54.322C259.859 6.56686 360.334 64.5001 401.445 183.698C442.556 302.896 408.663 438.225 325.763 485.98H325.793Z" stroke="#CACACA" strokeOpacity="0.48"/>
+                            <path d="M296.941 505.625C318.935 496.59 338.992 481.746 355.657 462.169C372.378 442.53 385.739 419.099 394.976 393.213C404.689 366.272 410.3 337.43 411.538 308.077C412.904 276.963 409.651 245.806 401.93 216.082C394.425 186.552 382.531 158.925 366.833 134.559C352.252 111.832 334.254 92.6416 313.786 77.9972C294.214 63.8943 272.441 54.8451 249.837 51.419C227.029 47.9916 203.875 50.8729 182.122 59.8456C160.129 68.8918 140.074 83.7392 123.406 103.314C106.689 122.954 93.3314 146.386 84.0969 172.27C74.4115 199.217 68.8283 228.059 67.6161 257.406C66.2444 288.517 69.4879 319.674 77.1928 349.401C84.7015 378.932 96.5988 406.559 112.301 430.924C126.874 453.642 144.857 472.831 165.307 487.486C184.874 501.572 206.635 510.62 229.226 514.064C252.034 517.493 275.189 514.608 296.941 505.625V505.625ZM297.245 506.85C207.147 543.851 108.18 473.548 76.3121 349.793C44.4437 226.039 91.7097 95.6956 181.858 58.682C272.007 21.6685 370.923 91.9844 402.781 215.726C434.639 339.468 387.393 469.787 297.245 506.801V506.85Z" stroke="#CACACA" strokeOpacity="0.48"/>
+                            <path d="M265.59 522.703C289.046 516.56 311.125 504.346 330.309 486.902C349.273 469.652 365.227 448.031 377.251 423.285C389.693 397.865 398.108 369.861 402.064 340.709C410.487 278.759 399.553 215.232 371.39 162.5C358.203 137.893 341.286 116.528 321.532 99.5329C302.397 82.9778 280.71 71.2408 257.755 65.0179C234.408 58.7211 210.208 58.6626 186.841 64.8464C163.383 70.9836 141.304 83.1975 122.122 100.647C103.161 117.893 87.2108 139.51 75.1899 164.251C62.7321 189.668 54.3003 217.672 50.3269 246.828C41.9143 308.778 52.8478 372.299 81.0007 425.037C94.1882 449.639 111.105 471 130.858 487.992C150.008 504.555 171.714 516.292 194.686 522.507C218.016 528.794 242.198 528.857 265.55 522.69L265.59 522.703ZM265.762 523.915C169.074 549.305 72.9324 466.864 51.0659 339.79C29.1994 212.717 89.889 89.0485 186.598 63.6461C283.306 38.2437 379.418 120.673 401.335 247.771C423.252 374.869 362.522 498.488 265.803 523.891L265.762 523.915Z" stroke="#CACACA" strokeOpacity="0.48"/>
+                            <path d="M231.616 535.695C256.366 532.595 280.306 523.258 301.892 508.284C322.942 493.675 341.407 474.193 356.234 450.951C371.336 427.418 382.586 400.613 389.378 371.976C403.652 311.401 397.996 246.493 373.596 190.852C362.037 164.545 346.431 141.152 327.615 121.932C309.114 102.929 287.701 88.5202 264.597 79.5292C240.899 70.3507 215.881 67.2354 191.134 70.3814C166.386 73.5273 142.45 82.8656 120.846 97.8032C99.7964 112.408 81.3309 131.886 66.5032 155.124C51.4137 178.664 40.178 205.473 33.3998 234.112C19.103 294.678 24.7408 359.588 49.1315 415.236C60.6996 441.538 76.3087 464.93 95.122 484.155C113.622 503.154 135.031 517.562 158.13 526.558C181.829 535.782 206.862 538.894 231.616 535.695V535.695ZM231.727 536.92C129.197 549.952 37.0138 455.801 25.7971 326.646C14.5804 197.49 88.5621 82.1992 191.051 69.1061C293.54 56.0129 385.714 150.213 396.94 279.38C408.167 408.548 334.175 523.888 231.686 536.92H231.727Z" stroke="#CACACA" strokeOpacity="0.48"/>
+                            <path d="M195.173 544.33C239.816 544.374 283.097 525.725 317.668 491.55C352.24 457.375 375.971 409.78 384.836 356.842C393.7 303.904 387.15 248.886 366.298 201.127C345.447 153.367 311.577 115.809 270.44 94.8269C223.186 70.6752 169.937 70.224 122.408 93.5725C74.8794 116.921 36.9632 162.157 17.0011 219.328C-2.96102 276.5 -3.33397 340.924 15.9643 398.428C35.2626 455.932 72.6512 501.806 119.905 525.958C143.717 538.146 169.317 544.395 195.173 544.33V544.33ZM195.173 545.555C87.8648 545.555 0.803711 440.222 0.803711 310.392C0.803711 180.563 87.8648 75.23 195.173 75.23C302.48 75.23 389.541 180.563 389.541 310.392C389.541 440.222 302.48 545.555 195.173 545.555Z" stroke="#CACACA" strokeOpacity="0.48"/>
+                            </svg>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
+            <section className="w-full xl:container mx-auto max-xl:px-4 py-30 max-md:py-16">
+                <p className="text-[#8D8D8D] text-sm sansRegular mb-2 max-md:mb-4">(About)</p>
+                <div className="flex max-md:flex-col justify-between gap-16">
+                <div className="w-[40%] max-md:w-full">
+                  <h2 className="xl:text-6xl md:text-4xl text-4xl inter font-medium text-[#111]">Dedicated to Investor Growth</h2>
+                </div>
+                <div className="w-[55%] max-md:w-full flex flex-col gap-y-8">
+                    <p className="sansRegular text-base max-md:text-lg text-[#111]">
+                    We prioritize transparency, trust, and strategic alignment to help investors navigate 
+                    high-growth markets with confidence. By providing clear insights and fostering strong 
+                    relationships, we ensure informed decision-making and sustainable value creation. 
+                    Our commitment extends beyond financial disclosures—we actively engage with stakeholders 
+                    to build lasting partnerships and drive meaningful impact.
+                    </p>
+                    <p className="sansRegular text-base max-md:text-lg text-[#111]">
+                    Beyond capital investment, we offer strategic guidance to help businesses unlock their full 
+                    potential. Through proactive investor engagement and market intelligence, we drive long-term 
+                    growth and stability in an ever-evolving financial landscape.
+                    </p>
+                </div>
+                </div>
+            </section>
             <Footer />
         </div>
     )
 }
 
-export default ReverseTakeover;
+export default MergeAcquisition;

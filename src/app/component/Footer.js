@@ -1,9 +1,10 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Plus } from "lucide-react"
 import Link from "next/link";
 
 export default function Footer() {
+  const [status, setStatus] = useState("");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -16,15 +17,37 @@ export default function Footer() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  useEffect(()=>{
+    setTimeout(() => {
+      setStatus("");
+    }, 5000);
+  },[status])
+
   const handleSelect = (option) => {
     setFormData({ ...formData, service: option });
     setIsDropdownOpen(false);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit =async  (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    setFormData({ name: "", email: "", phone: "", service: "" });
+    const res = await fetch("/api/sendEmail", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+         name :formData.name,
+         email : formData.email,
+         phone :formData.phone, 
+         service : formData.service 
+        }),
+  });
+
+  if (res.ok) {
+      setStatus("Email sent successfully!");
+      setFormData({ name: "", email: "", phone: "", service: "" });
+  } else {
+      setStatus("Failed to send email.");
+  }
+
   };
 
   return (
@@ -34,7 +57,7 @@ export default function Footer() {
         <div className="w-full flex max-md:flex-col justify-between gap-y-8">
           <div className="flex w-full lg:w-[40%] flex-col">
           <p className="text-[#8D8D8D] text-sm mb-24 max-md:mb-12">(Services)</p>
-          <p className="sansMedium text-base w-[70%] lg:w-[50%] text-white/50">
+          <p className="sansMedium max-md:text-base text-xl w-[70%] lg:w-[65%] text-white/50">
             Dunn Capital is ready to empower you and your future goals. To learn more about us, get in touch with us to begin a conversation.
           </p>
           </div>
@@ -94,10 +117,11 @@ export default function Footer() {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full py-4 mt-6 border border-gray-500 text-gray-300 hover:bg-white hover:text-black transition"
+              className="w-full py-4 mt-6 border border-gray-500 text-gray-300 hover:bg-white hover:text-black transition cursor-pointer"
             >
               Submit
             </button>
+          <p className={`bg-white text-center text-[#111] py-2 ${status ? "block" : "hidden"}`}>{status}</p>
           </form>
         </div>
 

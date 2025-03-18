@@ -53,7 +53,7 @@ return (
             {/* nav mob start */}
             <div className={`${isNavbarVisible? 'max-md:translate-y-[0px]' : 'max-md:translate-y-[-900px]'} transition duration-300 ease-in-out max-md:overflow-hidden z-10 max-md:min-h-[100vh] min-w-max flex items-center gap-16  max-md:fixed max-md:bg-[#fff] max-md:top-0 max-md:left-0 max-md:w-full max-md:flex-col max-md:gap-6 max-md:bg-primaryBg max-md:items-start max-md:p-4 max-md:pt-20 max-md:shadow-2xl`} aria-expanded="true" aria-haspopup="true" ref={NavRef}>
                 {/* nav dropdown start */}
-                <Link onClick={(e) => {if (window.innerWidth <= 768) {toggleNav();}}} href='#' className={`max-md:w-full flex flex-col items-start py-2 text-base max-md:text-4xl sansMedium hover:bg-primaryMain/10 rounded-lg max-md:text-[#000] uppercase ${textcolor}`}>
+                <Link onClick={(e) => {if (window.innerWidth <= 768) {toggleNav();}}} href='/' className={`max-md:w-full flex flex-col items-start py-2 text-base max-md:text-4xl sansMedium hover:bg-primaryMain/10 rounded-lg max-md:text-[#000] uppercase ${textcolor}`}>
                     Home
                 </Link>
                 <div className={`max-md:w-full cursor-pointer relative group`} onClick={toggleDropdown} id="menu-button" aria-expanded="true" aria-haspopup="true" ref={dropdownRef}>
@@ -81,10 +81,10 @@ return (
                 </div>
                 {/* nav dropdown end*/}
                 
-                <Link onClick={(e) => {if (window.innerWidth <= 768) {toggleNav();}}} href='#' className={`max-md:w-full flex flex-col items-start py-2 text-base max-md:text-4xl max-md:text-[#000] sansMedium  hover:bg-primaryMain/10 uppercase ${textcolor}`}>
+                <Link onClick={(e) => {if (window.innerWidth <= 768) {toggleNav();}}} href='#about' className={`max-md:w-full flex flex-col items-start py-2 text-base max-md:text-4xl max-md:text-[#000] sansMedium  hover:bg-primaryMain/10 uppercase ${textcolor}`}>
                     About
                 </Link>
-                <Link onClick={(e) => {if (window.innerWidth <= 768) {toggleNav();}}} href='#' className={`max-md:w-full flex flex-col items-start py-2 text-base max-md:text-4xl max-md:text-[#000] sansMedium hover:bg-primaryMain/10 uppercase ${textcolor}`}>
+                <Link onClick={(e) => {if (window.innerWidth <= 768) {toggleNav();}}} href='#team' className={`max-md:w-full flex flex-col items-start py-2 text-base max-md:text-4xl max-md:text-[#000] sansMedium hover:bg-primaryMain/10 uppercase ${textcolor}`}>
                     Team
                 </Link>
                 <hr className="w-full border-1 border-[#D3D3D3] my-0 md:hidden" />
